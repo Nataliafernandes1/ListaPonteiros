@@ -1,0 +1,4 @@
+◦ x for declarado como char? 4093, 4094 e 4095
+◦ x for declarado como int? 4094, 4096 e 4098
+◦ x for declarado como float? 4094, 4098 e 4102
+◦ x for declarado como double? 4100, 4108 e 4116

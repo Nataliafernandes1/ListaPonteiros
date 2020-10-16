@@ -1,0 +1,17 @@
+int main(){
+  int vet[] = {4,9,13};
+  int i;
+  for(i=0;i<3;i++){
+  printf("%d ",*(vet+i));
+  }
+}
+O codigo a cima retorna os valores 4, 9 e 13 como saída, ou seja, os valores do vetor vet em decimal.
+
+  int vet[] = {4,9,13};
+  int i;
+  for(i=0;i<3;i++){
+  printf("%X ",vet+i);
+  }
+}
+
+O codigo a cima retorna os valores 4, 9 e D como saída, ou seja, o valor 13 em hexadecimal.

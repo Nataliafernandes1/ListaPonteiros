@@ -1,0 +1,3 @@
+*(pulo + 2); // mostra o valor do terceiro elemento do vetor pulo.
+
+

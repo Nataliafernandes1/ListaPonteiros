@@ -1,0 +1,8 @@
+p = &i; correta
+*q = &j; inválida
+p = &*&i;correta
+i = (*&)j; inválida
+i = *&j; correta
+i = *&*&j; correta
+q = *p; inválida
+i = (*p)++ + *q; correta

@@ -1,0 +1,14 @@
+Um ponteiro para uma função é um ponteiro que aponta para o endereço de uma função. Serve principalmente para definir qual função será executada, sem a necessidade de escrever o nome da função, de forma explícita naquele ponto do código.	
+
+int prod( int x, int y){
+return (x*y);
+}
+int main(){
+int (*ptr) (), p, x=10, y=5;
+ptr=prod; // o ponteiro ptr aponta para função prod
+p=ptr(x,y); // eh possivel chamar a função usando o ponteiro ptr
+printf("%d \n", p);
+return 0;
+}
+
+fonte de pesquisa: https://www.inf.pucrs.br/~pinho/PRGSWB/PonteirosParaFuncoes/PonteirosParaFuncoes.html

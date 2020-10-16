@@ -1,0 +1,4 @@
+p = mat + 1; //expressão valida, retorna o endereco do segundo elemento do vetor mat
+p = mat++;// expressao invalida, não eh possível mudar o endereço do vetor
+p = ++mat;// expressão invalida, não eh posssível mudar o endereço de um vetor
+x = (*mat)++; //expressão valida, retorna o endereço

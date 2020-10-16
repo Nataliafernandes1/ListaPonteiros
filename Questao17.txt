@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+void somaVetor(int *r,int *a,int *b,int n){//função de soma de vetores
+    for(int i=0;i<n;i++){
+        *(r+i)=*(a+i)+*(b+i);
+    }
+}
+int main(){
+  int a[4]={1,3,0,-2},b[3]={5,-3,1},r[4];//exemplo
+  somaVetor(r,a,b,4);//chamdno a função
+  for(int i=0;i<4;i++){
+        printf("%d\n",*(r+i));//exibindo elementos do vetor resultante da soma
+    }
+}

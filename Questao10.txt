@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    char vet[4]; //1 byte
+    printf("\n %d", vet+1); // saida 6422045
+    printf("\n %d", vet+2); //saida 6422046
+    printf("\n %d", vet+3); //saida 6422047
+
+    int x[4]; //4 bytes
+    printf("\n %d", x+1); //saida 6422020
+    printf("\n %d", x+2); //saida 6422024
+    printf("\n %d", x+3); //saida 6422028
+
+    short y[4]; //2 bytes
+    printf("\n %d", y+1); //saida 6422010
+    printf("\n %d", y+2); //saida 6422012
+    printf("\n %d", y+3); //saida 6422014
+
+    long long z[4]; //8 bytes
+    printf("\n %d", z+1); //saida 6421976
+    printf("\n %d", z+2); //saida 6421984
+    printf("\n %d", z+3); //saida  6421992
+  return(0);
+}

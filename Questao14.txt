@@ -1,0 +1,24 @@
+A função qsort() é uma função em C utilizada para ordenação de arrays. O protótipo da função é void qsort(void *base, size_t nitems, size_t size, int (*compar)(const void *, const void*)), onde base é um ponteiro para o primeiro elemento do array, nitems é o número de elementos do array, size é o tamanho em bytes de cada elemento do array e compar é a função criada para o problema e que compara dois elementos.
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int comparador(const void *a,const void *b){ //criando a função que verifica dois valores retornando um inteiro
+    return *(int*)a-*(int*)b;//se o valor de "a" for maior que o valor de "b", então o valor será maior que zero, concluindo que a eh maior que b.
+}
+int main(){
+  int *v,n,i;//criando as variáveis que serão utilizadas
+  printf("digite a quantidade de numeros "); //imprimindo na tela "digite a quantidade de numeros"
+  scanf("%d",&n);//solicitao para o usuario o tamanho do vetor (quantos numeros ele deseja digitar para comparar)
+  v = (int *)malloc(n*sizeof(int));//reservando espaço para o vetor v com alocação dinâmica
+  for(i=0;i<n;i++){
+     scanf("%d",(v+i));//inserindo elementos no vetor
+  }
+  qsort(v,n,sizeof(int),comparador);//chamada da função qsort
+  printf("\nEm ordem crescente:\n");//imprimindo na tela "Em ordem crescente:"
+  for(i=0;i<n;i++){
+     printf("%d \n",*(v+i));//imprimindo os elementos ordenados pela função qsort;
+  }
+  free(v);//liberando o espaço ocupado pelo vetor;
+  return 0;
+}
